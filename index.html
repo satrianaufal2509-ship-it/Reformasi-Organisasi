@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Organisasi Reformis: Sumbang Keresahan Berorganisasi | Reformasi Organisasi</title>
+<meta name="description" content="Keresahanmu di organisasi layak didengar. Sumbang keresahan, gabung komunitas Organisasi Reformis, atau ajukan kerja sama organisasimu dan dapat produk gratis.">
+<meta name="theme-color" content="#0A2538">
+<meta property="og:title" content="Keresahanmu di Organisasi Layak Didengar, Bukan Dipendam">
+<meta property="og:description" content="Sumbang keresahan berorganisasi dan gabung komunitas Organisasi Reformis.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.png">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preload" href="assets/plus-jakarta-sans-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Plus Jakarta Sans";font-weight:400;font-display:swap;src:url(assets/plus-jakarta-sans-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-weight:500;font-display:swap;src:url(assets/plus-jakarta-sans-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-weight:600;font-display:swap;src:url(assets/plus-jakarta-sans-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-weight:700;font-display:swap;src:url(assets/plus-jakarta-sans-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-weight:800;font-display:swap;src:url(assets/plus-jakarta-sans-latin-800-normal.woff2) format("woff2")}
+
+:root{
+  --navy:#0A2538; --orange:#F04D22; --sky:#A9CEDE; --white:#FFFFFF;
+  --pad:clamp(20px,7vw,80px);
+  --maxw:1120px;
+  --r:28px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;font-size:17px;line-height:1.5;letter-spacing:-.03em;color:var(--navy);background:var(--white);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--pad)}
+section{padding-block:clamp(64px,10vw,120px)}
+.bg-navy{background:var(--navy);color:var(--white)}
+.bg-orange{background:var(--orange);color:var(--white)}
+.bg-sky{background:var(--sky);color:var(--navy)}
+.bg-white{background:var(--white);color:var(--navy)}
+
+h1,h2,h3{font-weight:600;line-height:1.02;letter-spacing:-.035em}
+h1{font-size:clamp(42px,10.5vw,104px)}
+h2{font-size:clamp(34px,7.4vw,72px);margin-bottom:.4em}
+h3{font-size:clamp(22px,3.4vw,30px);line-height:1.15}
+.lead{font-size:clamp(18px,2.4vw,24px);line-height:1.4;max-width:34em;margin-top:1.1em}
+.bg-navy .lead{color:var(--sky)}
+.pill{display:inline-block;background:var(--orange);color:var(--white);font-weight:600;font-size:16px;line-height:1;padding:11px 20px;border-radius:999px;margin-bottom:28px}
+.bg-orange .pill{background:var(--navy)}
+.bg-sky .pill,.bg-white .pill{background:var(--orange)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;gap:10px;min-height:56px;padding:14px 30px;border-radius:999px;font:700 19px/1.2 "Plus Jakarta Sans",sans-serif;letter-spacing:-.03em;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .15s,color .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.btn-orange{background:var(--orange);color:var(--white)}
+.btn-navy{background:var(--navy);color:var(--white)}
+.btn-ghost{border-color:currentColor;background:transparent;color:inherit}
+.bg-navy .btn-ghost{color:var(--white)}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.small{font-size:15px;opacity:.85;margin-top:16px}
+
+/* Header / hero */
+.hero{padding-top:clamp(36px,6vw,64px);min-height:100svh;display:flex;flex-direction:column}
+.hero .wrap{flex:1;display:flex;flex-direction:column;width:100%}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.topbar img{height:clamp(44px,7vw,64px);width:auto}
+.topbar span{font-weight:600;font-size:16px;color:var(--sky)}
+.hero-body{flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:56px}
+.hero h1{max-width:11em}
+.hero-body .pill{align-self:flex-start}
+.formcard form>.btn{width:100%}
+@media(min-width:620px){.formcard form>.btn{width:auto}}
+.foot-line{border-top:2px solid var(--sky);padding-block:20px;display:flex;justify-content:space-between;font-size:18px;color:var(--sky)}
+
+/* Keresahan */
+.kw-grid{display:grid;gap:28px;margin-top:48px}
+@media(min-width:760px){.kw-grid{grid-template-columns:repeat(2,1fr)}}
+.kw{border-top:2px solid rgba(255,255,255,.6);padding-top:22px}
+.kw svg{width:44px;height:44px;fill:var(--navy);margin-bottom:14px}
+.kw h3{margin-bottom:8px}
+.kw p{font-size:18px}
+.note{font-size:15px;margin-top:36px;opacity:.9}
+
+/* Kenapa */
+.cards{display:grid;gap:16px;margin-top:44px}
+@media(min-width:760px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--white);border:2px solid var(--sky);border-radius:var(--r);padding:28px}
+.card .n{display:inline-flex;width:40px;height:40px;border-radius:50%;background:var(--orange);color:#fff;font-weight:700;align-items:center;justify-content:center;margin-bottom:18px}
+.card p{margin-top:8px}
+
+/* Forms */
+.formcard{background:var(--white);color:var(--navy);border-radius:var(--r);padding:clamp(22px,4vw,44px);margin-top:44px;max-width:760px}
+.field{margin-bottom:20px}
+label,.legend{display:block;font-weight:600;font-size:16px;margin-bottom:8px}
+.opt{font-weight:400;opacity:.7}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;font:500 17px/1.4 "Plus Jakarta Sans",sans-serif;letter-spacing:-.02em;color:var(--navy);background:#fff;border:2px solid var(--sky);border-radius:16px;padding:14px 16px;min-height:52px}
+textarea{min-height:140px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--navy)}
+.check{display:flex;gap:12px;align-items:flex-start;font-weight:500;font-size:16px;margin-bottom:14px}
+.check input{width:24px;height:24px;margin-top:2px;accent-color:var(--orange);flex:none}
+.check label{font-weight:500;margin:0}
+.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.row2{display:grid;column-gap:20px}
+@media(min-width:620px){.row2{grid-template-columns:1fr 1fr}}
+.status{margin-top:18px;font-weight:600;border-radius:16px;padding:16px 18px;display:none}
+.status.ok{display:block;background:var(--sky)}
+.status.warn{display:block;background:#FFE9E2;color:#8A2610}
+.thanks{display:none}
+.thanks.show{display:block}
+.thanks h3{font-size:clamp(26px,4vw,36px);margin-bottom:10px}
+.thanks .btns{margin-top:22px}
+
+/* Komunitas */
+.split{display:grid;gap:40px;align-items:start}
+@media(min-width:900px){.split{grid-template-columns:5fr 6fr;gap:64px}}
+.photo{width:min(100%,360px);aspect-ratio:1;border-radius:50%;background:var(--navy);border:10px solid var(--orange);display:flex;align-items:center;justify-content:center;color:var(--sky);font-weight:600;font-size:20px;margin-bottom:28px}
+.steps{list-style:none;margin-top:24px;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:16px;padding:16px 0;border-top:2px solid var(--navy);font-weight:600;font-size:19px}
+.steps li::before{content:"0" counter(s);color:var(--orange);font-weight:800;font-size:22px}
+
+/* Suara */
+.big{font-size:clamp(46px,12vw,140px);font-weight:600;line-height:.95;letter-spacing:-.04em;color:var(--orange);margin-bottom:20px}
+.bg-navy .big+p{max-width:30em;color:var(--sky);font-size:clamp(18px,2.2vw,22px)}
+
+/* Kerja sama */
+.gift{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{background:var(--white);color:var(--navy);border-radius:999px;padding:10px 18px;font-weight:600;font-size:16px}
+.bg-orange .formcard .chip{background:var(--sky)}
+.free{display:inline-block;background:var(--navy);color:#fff;border-radius:999px;font-weight:700;font-size:15px;padding:6px 14px;margin-bottom:16px}
+
+/* FAQ */
+details{border-top:2px solid var(--sky);padding:22px 0}
+details:last-of-type{border-bottom:2px solid var(--sky)}
+summary{cursor:pointer;font-weight:600;font-size:clamp(19px,2.6vw,24px);list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-weight:800;font-size:30px;color:var(--orange);line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{margin-top:12px;max-width:42em;font-size:18px}
+
+/* Footer */
+footer{background:var(--navy);color:var(--white);padding-block:56px 32px}
+footer img{height:56px;width:auto;margin-bottom:28px}
+.foot-links{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:17px;color:var(--sky)}
+.foot-links a,.linkbtn{color:var(--sky);background:none;border:0;font:inherit;letter-spacing:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+dialog{border:0;border-radius:var(--r);max-width:min(640px,calc(100vw - 32px));padding:32px;color:var(--navy);font-size:16px}
+dialog::backdrop{background:rgba(10,37,56,.7)}
+dialog h3{margin-bottom:14px}
+dialog p,dialog li{margin-bottom:10px}
+dialog ul{padding-left:20px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<!-- 1. HERO (navy) -->
+<header class="hero bg-navy">
+  <div class="wrap">
+    <div class="topbar">
+      <img src="assets/logo-putih.png" alt="Reformasi Organisasi" width="749" height="198">
+      <span>@reformasiorganisasi</span>
+    </div>
+    <div class="hero-body">
+      <span class="pill">Organisasi Reformis</span>
+      <h1>Keresahanmu di organisasi layak didengar, bukan dipendam.</h1>
+      <p class="lead">Kumpulkan keresahan berorganisasi, temukan polanya, lalu perbaiki bersama komunitas Organisasi Reformis.</p>
+      <div class="btns">
+        <a class="btn btn-orange" href="#keresahan" data-cta="hero-keresahan">Sumbang keresahanmu</a>
+        <a class="btn btn-ghost" href="#komunitas" data-cta="hero-komunitas">Gabung Organisasi Reformis</a>
+      </div>
+      <p class="small" style="color:var(--sky)">Tanpa daftar akun. Kontak boleh dikosongkan.</p>
+    </div>
+    <div class="foot-line"><span>@reformasiorganisasi</span><span>Gulir &darr;</span></div>
+  </div>
+</header>
+
+<main>
+<!-- 2. KERESAHAN UMUM (orange) -->
+<section class="bg-orange" id="masalah">
+  <div class="wrap">
+    <span class="pill">Mungkin kamu pernah merasakan</span>
+    <h2>Keresahan yang sering dipendam.</h2>
+    <p class="lead">Bukan soal siapa yang salah. Ini soal kebiasaan yang diam-diam menguras tenaga semua orang.</p>
+    <div class="kw-grid">
+      <div class="kw"><svg viewBox="-50 -50 100 100" aria-hidden="true"><use href="#ast"/></svg><h3>Rapat panjang, hasil tidak jelas</h3><p>Duduk berjam-jam, pulang tanpa keputusan atau tugas yang pasti.</p></div>
+      <div class="kw"><svg viewBox="-50 -50 100 100" aria-hidden="true"><use href="#ast"/></svg><h3>Kerja menumpuk di segelintir orang</h3><p>Yang rajin makin dibebani, yang diam makin tidak terlihat.</p></div>
+      <div class="kw"><svg viewBox="-50 -50 100 100" aria-hidden="true"><use href="#ast"/></svg><h3>Kritik dianggap serangan</h3><p>Masukan ditelan sendiri karena takut dicap tidak kompak.</p></div>
+      <div class="kw"><svg viewBox="-50 -50 100 100" aria-hidden="true"><use href="#ast"/></svg><h3>Regenerasi macet</h3><p>Estafet kepengurusan jalan di tempat, pelajaran lama tidak diwariskan.</p></div>
+    </div>
+    <div class="btns"><a class="btn btn-navy" href="#keresahan" data-cta="masalah-keresahan">Sumbang keresahanmu</a></div>
+    <p class="note">Contoh keresahan umum, bukan data survei.</p>
+  </div>
+</section>
+
+<!-- 3. KENAPA REFORMASI (putih) -->
+<section class="bg-white" id="kenapa">
+  <div class="wrap">
+    <span class="pill">Kenapa perlu reformasi</span>
+    <h2>Tiga hal yang perlu kamu tahu.</h2>
+    <p class="lead">Reformasi organisasi berarti memperbaiki cara organisasi bekerja: cara memutuskan, membagi tugas, mendengar anggota, dan menyerahkan estafet.</p>
+    <div class="cards">
+      <div class="card"><span class="n">1</span><h3>Sistem, bukan orang</h3><p>Yang kita benahi adalah kebiasaan dan aturan main, bukan mencari kambing hitam.</p></div>
+      <div class="card"><span class="n">2</span><h3>Mulai dari cerita nyata</h3><p>Perubahan yang tepat butuh cerita dari dalam, bukan teori dari luar.</p></div>
+      <div class="card"><span class="n">3</span><h3>Dikerjakan bersama</h3><p>Satu suara mudah diabaikan. Banyak suara yang terkumpul menunjukkan polanya.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. FORM KERESAHAN (sky) -->
+<section class="bg-sky" id="keresahan">
+  <div class="wrap">
+    <span class="pill">Sumbang keresahan</span>
+    <h2>Ceritakan keresahanmu.</h2>
+    <p class="lead">Cukup beberapa menit. Ceritamu dibaca, dikelompokkan, lalu dibawa ke komunitas.</p>
+    <div class="formcard">
+      <form data-form="keresahan" novalidate>
+        <div class="hp" aria-hidden="true"><label>Jangan diisi <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <div class="field"><label for="k-cerita">Ceritakan keresahanmu</label><textarea id="k-cerita" name="keresahan" required placeholder="Apa yang kamu rasakan atau alami di organisasimu?"></textarea></div>
+        <div class="row2">
+          <div class="field"><label for="k-kat">Kategori</label>
+            <select id="k-kat" name="kategori" required><option value="">Pilih kategori</option><option>Kepemimpinan</option><option>Komunikasi</option><option>Pembagian kerja</option><option>Regenerasi</option><option>Transparansi</option><option>Budaya</option><option>Lainnya</option></select></div>
+          <div class="field"><label for="k-jenis">Jenis organisasi</label>
+            <select id="k-jenis" name="jenis_organisasi" required><option value="">Pilih jenis</option><option>Kampus</option><option>Komunitas</option><option>Sosial</option><option>Pemerintahan</option><option>Perusahaan</option><option>Lainnya</option></select></div>
+        </div>
+        <div class="field"><label for="k-kontak">WhatsApp atau email <span class="opt">(opsional, hanya jika mau dihubungi)</span></label><input id="k-kontak" type="text" name="kontak" autocomplete="off"></div>
+        <div class="check"><input id="k-anon" type="checkbox" name="tampil_anonim" value="ya"><label for="k-anon">Ceritaku boleh ditampilkan secara anonim.</label></div>
+        <div class="check"><input id="k-setuju" type="checkbox" name="persetujuan" value="ya" required><label for="k-setuju">Saya setuju data ini dipakai sesuai <button type="button" class="linkbtn" style="color:var(--navy)" data-open="privasi">kebijakan privasi</button>.</label></div>
+        <button class="btn btn-orange" type="submit" data-cta="form-keresahan">Kirim keresahanku</button>
+        <div class="status" role="status" aria-live="polite"></div>
+      </form>
+      <div class="thanks" data-thanks="keresahan">
+        <h3>Terima kasih sudah bersuara.</h3>
+        <p>Keresahanmu sudah kami terima. Kamu tidak sendirian, dan banyak orang merasakan hal serupa.</p>
+        <div class="btns"><a class="btn btn-orange" href="#komunitas">Gabung Organisasi Reformis</a><button class="btn btn-ghost" type="button" data-share>Bagikan halaman ini</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. SUARA YANG MASUK (navy) -->
+<section class="bg-navy" id="suara">
+  <div class="wrap">
+    <span class="pill">Suara yang masuk</span>
+    <div class="big" id="counter" aria-live="polite">Jadilah suara pertama.</div>
+    <p>Keresahan yang masuk dikelompokkan dan hanya ditampilkan secara anonim, dengan izin pengirim.</p>
+  </div>
+</section>
+
+<!-- 6. KOMUNITAS (sky) -->
+<section class="bg-sky" id="komunitas">
+  <div class="wrap split">
+    <div>
+      <div class="photo" role="img" aria-label="Placeholder foto komunitas">FOTO</div>
+      <span class="pill">Komunitas</span>
+      <h2>Gabung Organisasi Reformis.</h2>
+      <p class="lead" style="margin-top:0">Komunitas orang-orang yang mau memperbaiki cara kita berorganisasi, tanpa saling menyalahkan.</p>
+      <ol class="steps">
+        <li>Isi formulir singkat</li>
+        <li>Masuk ke kanal komunitas</li>
+        <li>Ikut membahas dan bergerak</li>
+      </ol>
+    </div>
+    <div class="formcard" style="margin-top:0">
+      <form data-form="komunitas" novalidate>
+        <div class="hp" aria-hidden="true"><label>Jangan diisi <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <div class="field"><label for="g-nama">Nama panggilan</label><input id="g-nama" type="text" name="nama" required autocomplete="nickname"></div>
+        <div class="field"><label for="g-kontak">WhatsApp atau email</label><input id="g-kontak" type="text" name="kontak" required autocomplete="off"></div>
+        <div class="field"><label for="g-peran">Jenis organisasi dan perananmu</label><input id="g-peran" type="text" name="organisasi_peran" required placeholder="Contoh: BEM kampus, anggota"></div>
+        <div class="field"><label for="g-kontribusi">Apa yang ingin kamu kontribusikan?</label><textarea id="g-kontribusi" name="kontribusi" style="min-height:100px"></textarea></div>
+        <div class="check"><input id="g-setuju" type="checkbox" name="persetujuan" value="ya" required><label for="g-setuju">Saya setuju data ini dipakai sesuai <button type="button" class="linkbtn" style="color:var(--navy)" data-open="privasi">kebijakan privasi</button>.</label></div>
+        <button class="btn btn-orange" type="submit" data-cta="form-komunitas">Gabung Organisasi Reformis</button>
+        <div class="status" role="status" aria-live="polite"></div>
+      </form>
+      <div class="thanks" data-thanks="komunitas">
+        <h3>Selamat datang di Organisasi Reformis.</h3>
+        <p>Pendaftaranmu sudah kami terima. Tautan kanal komunitas akan dikirim ke kontak yang kamu isi.</p>
+        <div class="btns"><button class="btn btn-ghost" type="button" data-share>Ajak temanmu</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. KERJA SAMA + PRODUK GRATIS (orange) -->
+<section class="bg-orange" id="kerjasama">
+  <div class="wrap">
+    <span class="pill">Untuk organisasi</span>
+    <h2>Organisasimu mau berbenah? Ajukan kerja sama, dapat produk gratis.</h2>
+    <p class="lead" style="color:#fff">Daftarkan organisasimu sebagai mitra awal. Kamu langsung mendapat <strong>Paket Template Organisasi Sehat</strong>, tanpa biaya.</p>
+    <div class="gift"><span class="chip">Checklist evaluasi organisasi</span><span class="chip">Template notulen rapat</span><span class="chip">Template pembagian tugas</span></div>
+    <div class="formcard">
+      <span class="free">GRATIS</span>
+      <form data-form="kerjasama" novalidate>
+        <div class="hp" aria-hidden="true"><label>Jangan diisi <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <div class="row2">
+          <div class="field"><label for="m-org">Nama organisasi</label><input id="m-org" type="text" name="nama_organisasi" required autocomplete="organization"></div>
+          <div class="field"><label for="m-jenis">Jenis organisasi</label><select id="m-jenis" name="jenis_organisasi" required><option value="">Pilih jenis</option><option>Kampus</option><option>Komunitas</option><option>Sosial</option><option>Pemerintahan</option><option>Perusahaan</option><option>Lainnya</option></select></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="m-anggota">Jumlah anggota</label><select id="m-anggota" name="jumlah_anggota" required><option value="">Pilih rentang</option><option>1 sampai 20</option><option>21 sampai 50</option><option>51 sampai 100</option><option>Lebih dari 100</option></select></div>
+          <div class="field"><label for="m-kota">Kota atau daerah</label><input id="m-kota" type="text" name="kota" required></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="m-pic">Nama penanggung jawab</label><input id="m-pic" type="text" name="pic" required autocomplete="name"></div>
+          <div class="field"><label for="m-jabatan">Jabatan</label><input id="m-jabatan" type="text" name="jabatan" required></div>
+        </div>
+        <div class="field"><label for="m-kontak">WhatsApp atau email penanggung jawab</label><input id="m-kontak" type="text" name="kontak" required autocomplete="off"></div>
+        <div class="field"><label for="m-bentuk">Bentuk kerja sama yang diminati</label><select id="m-bentuk" name="bentuk_kerja_sama" required><option value="">Pilih bentuk</option><option>Survei internal</option><option>Diskusi atau workshop</option><option>Kolaborasi konten</option><option>Jadi mitra komunitas</option><option>Lainnya</option></select></div>
+        <div class="field"><label for="m-resah">Keresahan utama organisasimu <span class="opt">(opsional)</span></label><textarea id="m-resah" name="keresahan_utama" style="min-height:100px"></textarea></div>
+        <div class="check"><input id="m-setuju" type="checkbox" name="persetujuan" value="ya" required><label for="m-setuju">Saya setuju data ini dipakai untuk menghubungi organisasi saya sesuai <button type="button" class="linkbtn" style="color:var(--navy)" data-open="privasi">kebijakan privasi</button>.</label></div>
+        <button class="btn btn-orange" type="submit" data-cta="form-kerjasama">Ajukan kerja sama organisasimu</button>
+        <p class="small" style="color:var(--navy)">Gratis. Dapat Paket Template Organisasi Sehat setelah kirim.</p>
+        <div class="status" role="status" aria-live="polite"></div>
+      </form>
+      <div class="thanks" data-thanks="kerjasama">
+        <h3>Pengajuan diterima.</h3>
+        <p>Terima kasih. Paket Template Organisasi Sehat akan dikirim ke kontak penanggung jawab, dan tim kami akan menghubungi untuk membahas kerja sama.</p>
+        <div class="btns" id="dl-slot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. FAQ (putih) -->
+<section class="bg-white" id="faq">
+  <div class="wrap">
+    <span class="pill">FAQ</span>
+    <h2>Pertanyaan yang sering muncul.</h2>
+    <div style="margin-top:36px">
+      <details><summary>Apakah keresahanku anonim?</summary><p>Kontak bersifat opsional. Kamu juga bisa memilih agar ceritamu hanya ditampilkan secara anonim, dan tanpa izinmu ceritamu tidak ditampilkan.</p></details>
+      <details><summary>Datanya dipakai untuk apa?</summary><p>Untuk membaca pola keresahan, menghubungi kamu bila kamu mengisi kontak, dan menyusun materi komunitas. Lihat kebijakan privasi ringkas di bagian bawah halaman.</p></details>
+      <details><summary>Apakah produk gratisnya benar-benar gratis?</summary><p>Ya. Paket Template Organisasi Sehat diberikan tanpa biaya kepada organisasi yang mengajukan kerja sama.</p></details>
+      <details><summary>Apakah setiap keresahan akan diselesaikan?</summary><p>Setiap keresahan dibaca, dikelompokkan, dan dibawa ke komunitas. Kami tidak menjanjikan tiap keresahan selesai satu per satu, tapi pola yang muncul akan dibahas bersama.</p></details>
+      <details><summary>Siapa di balik Organisasi Reformis?</summary><p>Organisasi Reformis adalah komunitas di bawah akun @reformasiorganisasi. Kamu bisa mengikuti kontennya di Instagram.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 9. CTA PENUTUP (orange) -->
+<section class="bg-orange" id="penutup">
+  <div class="wrap">
+    <h2>Organisasi bisa lebih baik. Mulai dari ceritamu.</h2>
+    <div class="btns">
+      <a class="btn btn-navy" href="#keresahan" data-cta="penutup-keresahan">Sumbang keresahanmu</a>
+      <button class="btn btn-ghost" type="button" data-share style="color:#fff">Bagikan halaman ini</button>
+      <a class="btn btn-ghost" href="https://www.instagram.com/reformasiorganisasi" rel="noopener" style="color:#fff">Ikuti @reformasiorganisasi</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER (navy) -->
+<footer>
+  <div class="wrap">
+    <img src="assets/logo-putih.png" alt="Reformasi Organisasi" width="749" height="198" loading="lazy">
+    <div class="foot-links">
+      <a href="https://www.instagram.com/reformasiorganisasi" rel="noopener">@reformasiorganisasi</a>
+      <button class="linkbtn" type="button" data-open="privasi">Kebijakan privasi</button>
+    </div>
+  </div>
+</footer>
+
+<dialog id="privasi">
+  <h3>Kebijakan privasi (ringkas)</h3>
+  <ul>
+    <li>Kami mengumpulkan hanya data yang kamu isi di formulir.</li>
+    <li>Data dipakai untuk membaca pola keresahan, menghubungi kamu bila kamu mengisi kontak, dan menyusun materi komunitas.</li>
+    <li>Ceritamu tidak ditampilkan ke publik tanpa izinmu, dan bila ditampilkan, dilakukan secara anonim.</li>
+    <li>Kontak pada formulir keresahan bersifat opsional.</li>
+    <li>Untuk pengguna di bawah 18 tahun, pengisian formulir memerlukan persetujuan orang tua atau wali.</li>
+    <li>Untuk meminta data dihapus, hubungi @reformasiorganisasi di Instagram.</li>
+  </ul>
+  <form method="dialog" style="margin-top:18px"><button class="btn btn-navy" style="min-height:48px">Tutup</button></form>
+</dialog>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="ast"><rect x="-9" y="-46" width="18" height="46" rx="2"/><rect x="-9" y="-46" width="18" height="46" rx="2" transform="rotate(72)"/><rect x="-9" y="-46" width="18" height="46" rx="2" transform="rotate(144)"/><rect x="-9" y="-46" width="18" height="46" rx="2" transform="rotate(216)"/><rect x="-9" y="-46" width="18" height="46" rx="2" transform="rotate(288)"/></g>
+  </defs>
+</svg>
+
+<script>
+/* ===== KONFIGURASI =====
+   Isi endpoint agar formulir benar-benar menyimpan data (Google Apps Script web app,
+   Formspree, Airtable webhook, dsb). Selama kosong, halaman berjalan sebagai pratinjau
+   dan TIDAK menyimpan apa pun. */
+var CONFIG = {
+  endpoints: { keresahan: "", komunitas: "", kerjasama: "" },
+  counterUrl: "",   /* opsional: URL yang mengembalikan {"count": 123} */
+  downloadUrl: ""   /* tautan unduh Paket Template Organisasi Sehat */
+};
+
+(function(){
+  var qs = new URLSearchParams(location.search);
+  var utm = {};
+  ["utm_source","utm_medium","utm_campaign","utm_content","ref"].forEach(function(k){ if(qs.get(k)) utm[k]=qs.get(k); });
+
+  function msg(form, cls, text){
+    var s = form.querySelector(".status"); s.className = "status " + cls; s.textContent = text;
+  }
+
+  document.querySelectorAll("form[data-form]").forEach(function(form){
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      var name = form.getAttribute("data-form");
+      if(form.querySelector('[name=website]').value){ return; } /* honeypot */
+      var missing = Array.prototype.filter.call(form.querySelectorAll("[required]"), function(el){
+        return el.type==="checkbox" ? !el.checked : !el.value.trim();
+      });
+      if(missing.length){
+        missing[0].focus();
+        msg(form,"warn","Mohon lengkapi isian yang wajib diisi.");
+        return;
+      }
+      var data = {}; new FormData(form).forEach(function(v,k){ if(k!=="website") data[k]=v; });
+      data.form = name; data.waktu = new Date().toISOString(); data.halaman = location.pathname;
+      Object.keys(utm).forEach(function(k){ data[k]=utm[k]; });
+      var btn = form.querySelector("button[type=submit]"); btn.disabled = true;
+      var url = CONFIG.endpoints[name];
+      function done(preview){
+        form.style.display = "none";
+        var t = document.querySelector('[data-thanks="'+name+'"]'); t.classList.add("show");
+        if(preview){
+          var p = document.createElement("p"); p.className="status warn"; p.style.display="block";
+          p.textContent = "Mode pratinjau: formulir belum terhubung ke penampung data, jadi isianmu belum tersimpan.";
+          t.appendChild(p);
+        }
+        if(name==="kerjasama" && CONFIG.downloadUrl){
+          var a = document.createElement("a"); a.className="btn btn-orange"; a.href=CONFIG.downloadUrl; a.textContent="Unduh Paket Template";
+          document.getElementById("dl-slot").appendChild(a);
+        }
+        t.scrollIntoView({behavior:"smooth",block:"center"});
+      }
+      if(!url){ console.warn("[Organisasi Reformis] endpoint formulir '"+name+"' belum diisi."); done(true); return; }
+      fetch(url,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(data)})
+        .then(function(){ done(false); })
+        .catch(function(){ btn.disabled=false; msg(form,"warn","Gagal mengirim. Periksa koneksi lalu coba lagi."); });
+    });
+  });
+
+  /* Bagikan */
+  document.querySelectorAll("[data-share]").forEach(function(b){
+    b.addEventListener("click", function(){
+      var d = {title:"Organisasi Reformis", text:"Keresahanmu di organisasi layak didengar. Sumbang keresahanmu di sini.", url:location.href.split("#")[0]};
+      if(navigator.share){ navigator.share(d).catch(function(){}); }
+      else if(navigator.clipboard){ navigator.clipboard.writeText(d.url).then(function(){ b.textContent="Tautan disalin"; }); }
+    });
+  });
+
+  /* Dialog privasi */
+  document.querySelectorAll("[data-open]").forEach(function(b){
+    b.addEventListener("click", function(){ var d=document.getElementById(b.getAttribute("data-open")); if(d.showModal) d.showModal(); });
+  });
+
+  /* Counter: hanya tampil jika ada data asli */
+  if(CONFIG.counterUrl){
+    fetch(CONFIG.counterUrl).then(function(r){return r.json();}).then(function(j){
+      if(j && j.count>0){ document.getElementById("counter").textContent = j.count.toLocaleString("id-ID")+" keresahan sudah masuk."; }
+    }).catch(function(){});
+  }
+})();
+</script>
+</body>
+</html>
