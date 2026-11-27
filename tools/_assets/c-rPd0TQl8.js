@@ -1,0 +1,1 @@
+var e=`reformasiorganisasi.web.id`,t=`Bukan Ganti Orang, Tapi Ubah Sistem.`,n=`@reformasiorganisasi`,r={navy:`#0b2639`,navy2:`#13344b`,navy3:`#24475f`,orange:`#f24e24`,orangeInk:`#b93a16`,sky:`#aacfdf`,skySoft:`#e3eff4`,cream:`#f5f1ea`,cream2:`#ebe5da`,muted:`#4a5d6b`,white:`#ffffff`};export{t as i,n,e as r,r as t};

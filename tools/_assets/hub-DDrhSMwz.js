@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./c-BDwSHhPV.js","./c-BcwqYGF-.js","./boot-CMcv1bHw.css","./c-Bp6e0k_L.js","./c-DlPa4unA.js"])))=>i.map(i=>d[i]);
+import{n as e,t}from"./c-BcwqYGF-.js";t(()=>e(()=>import(`./c-BDwSHhPV.js`),__vite__mapDeps([0,1,2,3,4]),import.meta.url));
